@@ -14,8 +14,9 @@ const forecast = (lat,long,callback) =>{
             callback(undefined, {
                 
                 forecast: body.current.weather_descriptions[0],
-                temperature: body.current.temperature
-                feelslike: body.current.feelslike
+                temperature: body.current.temperature,
+                feelslike: body.current.feelslike,
+                country: body.location.country
             })
 
         }

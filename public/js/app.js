@@ -16,9 +16,9 @@ search.addEventListener('click', (e)=>{
             if (data.error) {
                 mess1.textContent = data.error
             } else {
-                mess1.textContent = 'Location:' + data.location
+                mess1.textContent = 'Location:' + data.location + ', ' + data.country
                 mess2.textContent = 'Forecast:' + data.forecast 
-                mess3.textContent = 'Forecast:' + data.feelslike 
+                mess3.textContent = 'Temperature is ' + data.temp + ' degree but it feels like: ' + data.feelslike + ' degree'
                 input.value = ''
                 
                 
