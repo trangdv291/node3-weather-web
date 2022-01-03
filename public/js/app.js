@@ -2,6 +2,7 @@ const input = document.getElementById('input')
 const search = document.getElementById('search')
 const mess1 = document.getElementById('mess1')
 const mess2 = document.getElementById('mess2')
+const mess3 = document.getElementById('mess3')
 
 search.addEventListener('click', (e)=>{
     e.preventDefault();
@@ -17,6 +18,7 @@ search.addEventListener('click', (e)=>{
             } else {
                 mess1.textContent = 'Location:' + data.location
                 mess2.textContent = 'Forecast:' + data.forecast 
+                mess3.textContent = 'Forecast:' + data.feelslike 
                 input.value = ''
                 
                 
